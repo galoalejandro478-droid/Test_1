@@ -1,0 +1,105 @@
+/* Diseño general de la página */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #e8f4ff;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+/* Encabezado */
+header {
+    background: linear-gradient(135deg, #1565c0, #42a5f5);
+    color: white;
+    padding: 30px 15px;
+}
+
+header h1 {
+    font-size: 35px;
+    margin-bottom: 10px;
+}
+
+header p {
+    font-size: 18px;
+}
+
+/* Contenedor de las tarjetas */
+.contenedor {
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    flex-wrap: wrap;
+    gap: 25px;
+    padding: 40px 20px;
+}
+
+/* Diseño de cada tarjeta */
+.tarjeta {
+    background-color: white;
+    width: 280px;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+/* Efecto al pasar el mouse */
+.tarjeta:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 20px rgba(21, 101, 192, 0.35);
+}
+
+/* Imágenes */
+.tarjeta img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+/* Títulos */
+.tarjeta h2 {
+    color: #1565c0;
+    font-size: 23px;
+}
+
+.tarjeta h3 {
+    color: #333;
+    font-size: 20px;
+}
+
+/* Párrafos */
+.tarjeta p {
+    color: #555;
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+/* Pie de página */
+footer {
+    background-color: #1565c0;
+    color: white;
+    padding: 20px;
+    margin-top: 10px;
+}
+
+footer p {
+    margin: 8px;
+    font-size: 15px;
+}
+
+/* Adaptación para celulares */
+@media (max-width: 600px) {
+    header h1 {
+        font-size: 27px;
+    }
+
+    .contenedor {
+        padding: 25px 15px;
+    }
+
+    .tarjeta {
+        width: 100%;
+        max-width: 320px;
+    }
+}
